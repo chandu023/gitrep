@@ -1,0 +1,11 @@
+<project name="flex" default="package" basedir="." >
+   <target name="compile">
+	   <mkdir dir="class"/>
+	    <javac srcdir="src" destdir="class"/>
+   </target>
+   <target name="package" depends="class">
+	   <mkdir dir="lib"/>
+	    <jar basedir="class" destfile="lib/flex.jar"/>
+	  </target>
+
+</project>
