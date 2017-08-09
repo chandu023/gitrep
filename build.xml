@@ -3,7 +3,7 @@
 	   <mkdir dir="class"/>
 	    <javac srcdir="src" destdir="class"/>
    </target>
-   <target name="package" depends="class">
+   <target name="package" depends="compile">
 	   <mkdir dir="lib"/>
 	    <jar basedir="class" destfile="lib/flex.jar"/>
 	  </target>
